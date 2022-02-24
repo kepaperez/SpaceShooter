@@ -15,7 +15,9 @@ public class StartUp extends AppCompatActivity {
     }
 
     public void startGame(View view) {
-        startActivity(new Intent(this, MainActivity.class));
-        finish();
+       // startActivity(new Intent(this, MainActivity.class));
+
+
+        setContentView(new SpaceShooter(this));
     }
 }
