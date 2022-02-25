@@ -1,6 +1,8 @@
 package com.sandipbhattacharya.spaceshooter;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -14,7 +16,7 @@ public class GameOver extends AppCompatActivity {
 
     DBHelper DB ;
     TextView tvPoints;
-    String user;
+
 
 
     @Override
@@ -23,11 +25,20 @@ public class GameOver extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_over);
         int points = getIntent().getExtras().getInt("points");
+
+    //String name = getIntent().getExtras().getString("user");
+
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("MyUser" , Context.MODE_PRIVATE);
+        String name = sp.getString("name","");
+
+
+
+
         tvPoints = findViewById(R.id.tvPoints);
         tvPoints.setText("" + points);
-        user = "kepa";
 
-      DB.insertPartida("kepa", String.valueOf(points));
+
+      DB.insertPartida(name, String.valueOf(points));
 
 
     }

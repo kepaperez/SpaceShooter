@@ -24,6 +24,7 @@ public class SpaceShooter extends View {
     Handler handler;
     long UPDATE_MILLIS = 10;
 
+
     static int screenWidth, screenHeight;
     int points = 0;
     int life = 3;
@@ -32,6 +33,7 @@ public class SpaceShooter extends View {
     boolean paused = false;
     OurSpaceship ourSpaceship;
 
+
   EnemySpaceship enemySpaceship;//
     Random random;
    private List<Shot> enemyShots, ourShots;
@@ -39,11 +41,15 @@ public class SpaceShooter extends View {
     Explosion explosion;
     ArrayList<Explosion> explosions;
     boolean enemyShotAction = false;
+
+
+
     final Runnable runnable = new Runnable() {
         @Override
         public void run() {
            invalidate();
         }
+
     };
 
 
@@ -72,6 +78,7 @@ public class SpaceShooter extends View {
         scorePaint.setTextAlign(Paint.Align.LEFT);
 
 
+
     }
 
     @Override
@@ -86,6 +93,8 @@ public class SpaceShooter extends View {
         if(life == 0){
             paused = true;
             handler = null;
+
+
             Intent intent = new Intent(context, GameOver.class);
             intent.putExtra("points", points);
             context.startActivity(intent);

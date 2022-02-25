@@ -12,11 +12,11 @@ public class StartUp extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startup);
+
     }
 
     public void startGame(View view) {
        // startActivity(new Intent(this, MainActivity.class));
-
 
         setContentView(new SpaceShooter(this));
     }

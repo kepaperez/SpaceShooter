@@ -45,11 +45,13 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues contentValues= new ContentValues();
         contentValues.put("username", username);
         contentValues.put("password", password);
+
         long result = MyDB.insert("users", null, contentValues);
         if(result==-1) return false;
         else
             return true;
     }
+
 
     public Boolean checkusername(String username) {
         SQLiteDatabase MyDB = this.getWritableDatabase();

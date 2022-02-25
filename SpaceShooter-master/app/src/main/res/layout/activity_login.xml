@@ -5,28 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Login.LoginActivity">
+    tools:context=".Login.LoginActivity"
+    android:background ="@drawable/background2"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-439dp"
+        android:src="@drawable/logoblanco" />
 
     <EditText
         android:id="@+id/username1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:hint="User Name"
-        android:layout_marginTop="50dp"/>
+        android:textColor="#E8DFDF"
+        android:textColorHighlight="#F6F1F1"
+        android:textColorHint="#F3E9E9"
+        android:textColorLink="#EFEAEA" />
 
     <EditText
         android:id="@+id/password1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/username1"
+        android:layout_marginTop="80dp"
         android:hint="Password"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/username1"/>
+        android:textColor="#F6F5F5"
+        android:textColorHighlight="#F6F5F5"
+        android:textColorHint="#F6F5F5"
+        android:textColorLink="#F6F5F5" />
 
     <Button
         android:id="@+id/btnsignin1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/password1"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="118dp"
         android:text="Login" />
 </RelativeLayout>
