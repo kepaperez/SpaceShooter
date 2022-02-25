@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sandipbhattacharya.spaceshooter.Login.DBHelper;
+import com.sandipbhattacharya.spaceshooter.Login.LoginActivity;
 
 public class GameOver extends AppCompatActivity {
 
@@ -52,7 +53,8 @@ public class GameOver extends AppCompatActivity {
 
 
     public void exit(View view) {
-
+        Intent intent = new Intent(GameOver.this, LoginActivity.class);
+        startActivity(intent);
         finish();
     }
 }

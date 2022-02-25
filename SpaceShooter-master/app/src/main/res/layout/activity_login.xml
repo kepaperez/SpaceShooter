@@ -47,4 +47,14 @@
         android:layout_below="@+id/password1"
         android:layout_marginTop="118dp"
         android:text="Login" />
+
+    <Button
+        android:id="@+id/btnsignin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password1"
+        android:layout_marginTop="183dp"
+        android:text="Register" />
+
+
 </RelativeLayout>
