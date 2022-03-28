@@ -70,7 +70,7 @@ public class SpaceShooter extends View {
 
 
         handler = new Handler();
-        background = BitmapFactory.decodeResource(context.getResources(), R.drawable.background2);
+        background = BitmapFactory.decodeResource(context.getResources(), R.drawable.backgroundmove);
         lifeImage = BitmapFactory.decodeResource(context.getResources(), R.drawable.life);
         scorePaint = new Paint();
         scorePaint.setColor(Color.WHITE);
