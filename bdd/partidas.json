@@ -1,0 +1,26 @@
+[
+    {
+        "date": "28-03-2022",
+        "id": 1,
+        "score": "1",
+        "username": "kepa"
+    },
+    {
+        "date": "28-03-2022",
+        "id": 2,
+        "score": "6",
+        "username": "manolo"
+    },
+    {
+        "date": "28-03-2022",
+        "id": 3,
+        "score": "2",
+        "username": "manolo"
+    },
+    {
+        "date": "28-03-2022",
+        "id": 4,
+        "score": "6",
+        "username": "kepa"
+    }
+]

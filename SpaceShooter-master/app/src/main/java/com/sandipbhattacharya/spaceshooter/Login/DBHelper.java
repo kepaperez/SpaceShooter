@@ -6,6 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 public class DBHelper extends SQLiteOpenHelper {
     public static final String DBNAME = "Login.db";
     public DBHelper(Context context) {
@@ -14,7 +19,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase MyDB) {
-        MyDB.execSQL("create Table partidas(id INTEGER  primary key,username TEXT , score TEXT)");
+        MyDB.execSQL("create Table partidas(id INTEGER  primary key,username TEXT , score TEXT, date DATE)");
       MyDB.execSQL("create Table users( username TEXT primary key, password TEXT)");
 
     }
@@ -32,8 +37,17 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         ContentValues contentValues= new ContentValues();
 
+
+        Date c = Calendar.getInstance().getTime();
+
+        SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
+        String date = df.format(c);
+
         contentValues.put("username", username);
         contentValues.put("score", score);
+        contentValues.put("date", date);
+
+
         long result = MyDB.insert("partidas", null, contentValues);
         if(result==-1) return false;
         else

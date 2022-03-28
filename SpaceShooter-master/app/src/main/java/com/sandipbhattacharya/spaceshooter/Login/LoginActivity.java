@@ -1,8 +1,10 @@
 package com.sandipbhattacharya.spaceshooter.Login;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SharedMemory;
 import android.view.View;
@@ -11,12 +13,18 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sandipbhattacharya.spaceshooter.GameOver;
 import com.sandipbhattacharya.spaceshooter.MainActivity;
 import com.sandipbhattacharya.spaceshooter.R;
 import com.sandipbhattacharya.spaceshooter.StartUp;
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 
 public class LoginActivity extends AppCompatActivity {
     EditText username, password;
@@ -25,8 +33,11 @@ public class LoginActivity extends AppCompatActivity {
     Button btnregister;
     DBHelper DB;
     String user;
+    LocalDate date;
     SharedPreferences sp;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +47,12 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password1);
         btnlogin = (Button) findViewById(R.id.btnsignin1);
         btnregister = (Button) findViewById(R.id.btnsignin2);
+
         DB = new DBHelper(this);
+
+
+
+
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
