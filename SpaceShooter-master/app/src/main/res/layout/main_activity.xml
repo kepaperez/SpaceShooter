@@ -39,7 +39,8 @@
         android:textColor="#F6F5F5"
         android:textColorHighlight="#F6F5F5"
         android:textColorHint="#F6F5F5"
-        android:textColorLink="#F6F5F5" />/>
+        android:textColorLink="#F6F5F5"
+        android:inputType="textPassword"/>
 
     <EditText
         android:id="@+id/repassword"
@@ -51,7 +52,8 @@
         android:textColor="#F6F5F5"
         android:textColorHighlight="#F6F5F5"
         android:textColorHint="#F6F5F5"
-        android:textColorLink="#F6F5F5" />/>
+        android:textColorLink="#F6F5F5"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/btnsignup"
