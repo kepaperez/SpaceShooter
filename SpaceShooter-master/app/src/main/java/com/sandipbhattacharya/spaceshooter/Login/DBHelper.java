@@ -1,7 +1,9 @@
 package com.sandipbhattacharya.spaceshooter.Login;
 
+import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -10,6 +12,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+
+
+
+
 
 public class DBHelper extends SQLiteOpenHelper {
     public static final String DBNAME = "Login.db";
@@ -85,4 +91,6 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
     }
 
-}
+
+
+    }
