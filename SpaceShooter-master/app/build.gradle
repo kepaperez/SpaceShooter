@@ -40,4 +40,9 @@ dependencies {
     implementation 'com.android.volley:volley:1.2.1'
 
     implementation 'org.mongodb:stitch-android-sdk:4.7.0'
+
+    implementation 'com.ajts.androidmads.sqliteimpex:library:1.0.0'
+
+
+
 }
