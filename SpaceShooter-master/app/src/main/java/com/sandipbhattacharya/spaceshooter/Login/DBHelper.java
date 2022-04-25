@@ -7,13 +7,10 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-
-
 
 
 
@@ -29,7 +26,6 @@ public class DBHelper extends SQLiteOpenHelper {
       MyDB.execSQL("create Table users( username TEXT primary key, password TEXT)");
 
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
 
@@ -37,7 +33,6 @@ public class DBHelper extends SQLiteOpenHelper {
         MyDB.execSQL("drop Table if exists users");
 
     }
-
 
     public Boolean insertPartida(String username, String score){
         SQLiteDatabase MyDB = this.getWritableDatabase();
