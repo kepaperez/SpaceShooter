@@ -32,8 +32,8 @@
 .tituloRanking{
   border-radius: 25px;
   width: 15rem;
-  background: rgb(0,185,255);
-  background: linear-gradient(341deg, #000000 0%, #011536 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(341deg, #000000 0%, #011536 80%);
   padding:0.7rem ;
   display: flex;
   justify-content: center;
