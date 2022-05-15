@@ -1,8 +1,10 @@
 {"equipos":[
-    {"id":"1","name":"G2 Esports", "date":"12/05/2022" ,"country":"Europe"},
+    {"id":"1","name":"G2", "date":"12/05/2022" ,"country":"Europe"},
     {"id":"2","name":"Fnatic", "date":"12/05/2022" ,"country":"Europe"},
     {"id":"3","name":"Cloud9", "date":"12/05/2022" ,"country":"United States"},
     {"id":"4","name":"TSM", "date":"12/05/2022" ,"country":"United States"},
     {"id":"5","name":"Optic", "date":"12/05/2022" ,"country":"United States "},
-    {"id":"6","name":"Sentinels", "date":"12/05/2022" ,"country":"Europe"}
+    {"id":"6","name":"Luminosity", "date":"12/05/2022" ,"country":"United States "},
+    {"id":"7","name":"FazeClan", "date":"12/05/2022" ,"country":"United States "},
+    {"id":"8","name":"Sentinels", "date":"12/05/2022" ,"country":"Europe"}
 ]}

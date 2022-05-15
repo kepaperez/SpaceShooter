@@ -1,11 +1,11 @@
 {"partidas":[
-    {"name":"John", "date":"12/05/2022" ,"score":"45"},
-    {"name":"Mikel", "date":"12/04/2022" ,"score":"345"},
-    {"name":"Kepa", "date":"02/03/2022" ,"score":"565"},
-    {"name":"Jon", "date":"12/05/2022" ,"score":"43"},
-    {"name":"Alex", "date":"04/04/2022" ,"score":"997"},
-    {"name":"Unai", "date":"08/02/2022" ,"score":"46"},
-    {"name":"Aitor", "date":"01/05/2022" ,"score":"3557"},
-    {"name":"Andres", "date":"23/05/2022" ,"score":"3242"},
-    {"name":"Juan", "date":"12/05/2022" ,"score":"4513"}
+    {"name":"John", "date":"12/05/2022" ,"score":"45","id_equipo":"1"},
+    {"name":"Mikel", "date":"12/04/2022" ,"score":"345","id_equipo":"2"},
+    {"name":"Kepa", "date":"02/03/2022" ,"score":"565","id_equipo":"6"},
+    {"name":"Jon", "date":"12/05/2022" ,"score":"43","id_equipo":"1"},
+    {"name":"Alex", "date":"04/04/2022" ,"score":"997","id_equipo":"3"},
+    {"name":"Unai", "date":"08/02/2022" ,"score":"46","id_equipo":"5"},
+    {"name":"Aitor", "date":"01/05/2022" ,"score":"3557","id_equipo":"1"},
+    {"name":"Andres", "date":"23/05/2022" ,"score":"3242","id_equipo":"4"},
+    {"name":"Juan", "date":"12/05/2022" ,"score":"4513","id_equipo":"1"}
 ]}

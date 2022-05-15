@@ -47,3 +47,31 @@
   margin: 0px;
   font-size: 20px;
 }
+.headerRanking{
+  border-radius: 25px;
+  background: linear-gradient(341deg, #000000 0%, #011536 80%);
+  margin-bottom: 100px;
+}
+.numeroTH{
+  padding-left: 2rem !important;
+}
+.teamContainer{
+  border-radius: 25px;
+  background: linear-gradient(341deg, #000000 0%, #011536 80%);
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
+  color: #000000;
+  justify-content: center;
+  display: flex;
+}
+.teamContainer:hover{
+  background: #041736 ;
+  transition: 2;
+  
+}
+.teamContainer img{
+  margin: 2rem;
+  background-color: transparent;
+  border-color: transparent;
+}
