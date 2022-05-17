@@ -17,6 +17,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
         '<td>'+data.partidas[i].score+'</td>'+
         '<td>'+data.partidas[i].date+'</td>'+
         '</tr>';
+
+        document.getElementById("table2").innerHTML +=
+        '<tr>'+
+       ' <th scope="row" class="numeroTH">'+(i+1)+'</th>'+
+        '<td>'+data.partidas[i].name+'</td>'+
+        '<td>'+data.partidas[i].score+'</td>'+
+        '<td>'+data.partidas[i].date+'</td>'+
+        '</tr>';
+
+        document.getElementById("table3").innerHTML +=
+        '<tr>'+
+       ' <th scope="row" class="numeroTH">'+(i+1)+'</th>'+
+        '<td>'+data.partidas[i].name+'</td>'+
+        '<td>'+data.partidas[i].score+'</td>'+
+        '<td>'+data.partidas[i].date+'</td>'+
+        '</tr>';
     }
    })
    .catch(function (err){
