@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
     
-   fetch('../SpaceShooterWeb/json/partidas.json')
+   fetch('/json/partidas.json')
    .then(function(response){
        return response.json();
    })
@@ -53,7 +53,7 @@ element.addEventListener("click", myFunction);
 function myFunction() {
 
   alert("Logeado correctamente!!!");
-    window.location.href = "../SpaceShooterWeb/perfil.html";
+    window.location.href = "./perfil.html";
 }
 
 

@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsediii');
 
 
-    fetch('../SpaceShooterWeb/json/equipos.json')
+    fetch('json/equipos.json')
         .then(function (response) {
             return response.json();
 
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             teamsAllInfo = data;
             for (let i = 0; i < data.equipos.length; i++) {
                 document.getElementById("containerTeams").innerHTML +=
-                    '<div class="col-md-2 teamContainer" id="' + data.equipos[i].id + '"><img src="../SpaceShooterWeb/img/teamsLogo/' + data.equipos[i].name + '.png" alt="..." class="img-thumbnail"></div>';
+                    '<div class="col-md-2 teamContainer" id="' + data.equipos[i].id + '"><img src="img/teamsLogo/' + data.equipos[i].name + '.png" alt="..." class="img-thumbnail"></div>';
                 /*        '<div class="col-3 teamContainer"><img src="../SpaceShooterWeb/img/teamsLogo/cloud9.png" alt="..." class="img-thumbnail">'+data.equipos[i].name+'</div>';*/
             }
             let elementsArray = document.querySelectorAll(".teamContainer");
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 function teamInfo(id) {
 
     var id = id - 1;
-    fetch('../SpaceShooterWeb/json/partidas.json')
+    fetch('json/partidas.json')
         .then(function (response) {
             return response.json();
         })
@@ -52,7 +52,7 @@ function teamInfo(id) {
                 if (data.partidas[i].id_equipo == id) {
                     document.getElementById("jugadoresEquipo").innerHTML +=
                         `<div class="card m-2 p-2" style="width: 18rem;background-color:#011536;">
-                            <img src="../SpaceShooterWeb/img/default-avatar.jpg" class="card-img-top " alt="...">
+                            <img src="img/default-avatar.jpg" class="card-img-top " alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">`+ data.partidas[i].name +` </h5>
                                 </div>
@@ -66,7 +66,7 @@ function teamInfo(id) {
 
 
     document.getElementById("teamInfo").innerHTML += "<h4>" + teamsAllInfo.equipos[id].name + "</h4><p>Europe</p>";
-    document.getElementById("teamImg").innerHTML += '<img src="../SpaceShooterWeb/img/teamsLogo/' + teamsAllInfo.equipos[id].name + '.png" alt="..."class="img-thumbnail">';
+    document.getElementById("teamImg").innerHTML += '<img src="img/teamsLogo/' + teamsAllInfo.equipos[id].name + '.png" alt="..."class="img-thumbnail">';
 
     //document.getElementById("teamImg").innerHTML +='<img src="../SpaceShooterWeb/img/teamsLogo/g2.png" alt="..."class="img-thumbnail">';
 
