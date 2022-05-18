@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
     
-   fetch('./json/partidas.json')
+   fetch('../SpaceShooterWeb/json/partidas.json')
    .then(function(response){
        return response.json();
    })

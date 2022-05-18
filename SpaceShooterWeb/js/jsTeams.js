@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsediii');
 
 
-    fetch('./json/equipos.json')
+    fetch('../SpaceShooterWeb/json/equipos.json')
         .then(function (response) {
             return response.json();
 
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 function teamInfo(id) {
 
     var id = id - 1;
-    fetch('./json/partidas.json')
+    fetch('../SpaceShooterWeb/json/partidas.json')
         .then(function (response) {
             return response.json();
         })
