@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsediii');
+
+
     
    fetch('./json/partidas.json')
    .then(function(response){
@@ -38,5 +40,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
    .catch(function (err){
        console.log(err);
    })
+
+
+ 
   
 });
+
+
+const element = document.getElementById("btnLogin");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+
+  alert("Logeado correctamente!!!");
+    window.location.href = "../SpaceShooterWeb/perfil.html";
+}
+
+
+
+
